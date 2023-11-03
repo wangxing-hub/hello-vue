@@ -1,5 +1,6 @@
 <template>
   <img alt="Vue logo" src="./assets/logo.png">
+  <br><el-button type="primary" @click="hey">hey</el-button>
   <HelloWorld msg="Welcome to Your Vue.js App"/>
 </template>
 
@@ -10,6 +11,11 @@ export default {
   name: 'App',
   components: {
     HelloWorld
+  },
+  methods: {
+    hey() {
+      alert('hey')
+    }
   }
 }
 </script>
